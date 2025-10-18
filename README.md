@@ -135,16 +135,21 @@ Task1/
 
 ## 📸 Screenshots
 
-| Description                      | Screenshot                                  |
-| -------------------------------- | ------------------------------------------- |
-| Application Running              | ![App Running](screenshots/app_running.png) |
-| Create Task                       | ![Create Task](screenshots/create_task.png) |
-| Get All Tasks                      | ![Get All Tasks](screenshots/get_all.png) |
-| Get Task by ID                     | ![Get Task by ID](screenshots/get_by_id.png) |
-| Update Task                        | ![Update Task](screenshots/update_task.png) |
-| Delete Task                        | ![Delete Task](screenshots/delete_task.png) |
-| Find Task by Name                  | ![Find Task](screenshots/find_task.png) |
-| Execute Task                        | ![Execute Task](screenshots/execute_task.png) |
+## 📸 Screenshots
+
+| Description                 | Screenshot                                  |
+|-----------------------------|--------------------------------------------|
+| MongoDB running             | ![MongoDB](screenshots/mongodb_running.png) |
+| Application running         | ![App Running](screenshots/app_running.png) |
+| Create Task                 | ![Create Task](screenshots/create_task.png) |
+| Get All Tasks               | ![Get All](screenshots/get_all_tasks.png)   |
+| Get Task by ID              | ![Get by ID](screenshots/get_task_by_id.png)|
+| Update Task                 | ![Update](screenshots/update_task.png)     |
+| Delete Task                 | ![Delete](screenshots/delete_task.png)     |
+| Find Task by Name           | ![Find](screenshots/find_task_by_name.png) |
+| Execute Task                | ![Execute](screenshots/execute_task.png)   |
+| MongoDB Data View           | ![DB View](screenshots/mongodb_data.png)   |
+
 
 ---
 
