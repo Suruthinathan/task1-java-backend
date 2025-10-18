@@ -132,9 +132,6 @@ Task1/
 ```
 
 ---
-
-## 📸 Screenshots
-
 ## 📸 Screenshots
 
 | Description                 | Screenshot                                  |
@@ -148,7 +145,7 @@ Task1/
 | Delete Task                 | ![Delete](screenshots/delete_task.png)     |
 | Find Task by Name           | ![Find](screenshots/find_task_by_name.png) |
 | Execute Task                | ![Execute](screenshots/execute_task.png)   |
-| MongoDB Data View           | ![DB View](screenshots/mongodb_data.png)   |
+| MongoDB Data View           | ![DB View](screenshots/mongodb_data_2.png)   |
 
 
 ---
