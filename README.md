@@ -2,8 +2,8 @@
 
 ## 👩‍💻 Author
 **Name:** Suruthi M S  
-**GitHub:** https://github.com/<your-username>  
-**Email:** your-email@example.com  
+**GitHub:** https://github.com/Suruthinathan  
+**Email:** suruthi1425@gmail.com
 
 
 ## 📘 Overview
@@ -138,8 +138,13 @@ Task1/
 | Description                      | Screenshot                                  |
 | -------------------------------- | ------------------------------------------- |
 | Application Running              | ![App Running](screenshots/app_running.png) |
-| Postman Request (Create Item)    | ![Create](screenshots/create_item.png)      |
-| Postman Response (Get All Items) | ![GetAll](screenshots/get_all.png)          |
+| Create Task                       | ![Create Task](screenshots/create_task.png) |
+| Get All Tasks                      | ![Get All Tasks](screenshots/get_all.png) |
+| Get Task by ID                     | ![Get Task by ID](screenshots/get_by_id.png) |
+| Update Task                        | ![Update Task](screenshots/update_task.png) |
+| Delete Task                        | ![Delete Task](screenshots/delete_task.png) |
+| Find Task by Name                  | ![Find Task](screenshots/find_task.png) |
+| Execute Task                        | ![Execute Task](screenshots/execute_task.png) |
 
 ---
 
@@ -150,13 +155,4 @@ Task1/
 * Replace `<your-username>` and `<your-task1-repo-name>` with your actual GitHub repo details.
 * Screenshots should show your system date/time and your name to confirm originality.
 
-```
-
-✅ Key points:
-
-- All **bash commands are in proper code blocks**.  
-- Normal text, headings, and tables are **outside code blocks**, so GitHub renders them properly.  
-- You can now **add this to your repo**, commit, and it will appear nicely on GitHub.  
-
-If you want, I can also **update it to match your actual Task API (`/api/tasks` instead of `/api/items`)** so it perfectly matches your backend. Do you want me to do that?
 ```
