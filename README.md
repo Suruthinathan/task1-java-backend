@@ -35,7 +35,10 @@ The API stores data in **MongoDB** and allows CRUD operations (Create, Read, Upd
 Open PowerShell or VS Code terminal and run:
 
 ```bash
-docker run -d --name tasks-mongo -p 27017:27017 -e MONGO_INITDB_DATABASE=tasksdb -v mongo-data:/data/db mongo:6
+docker run -d --name tasks-mongo -p 27017:27017 \
+-e MONGO_INITDB_DATABASE=tasksdb \
+-v mongo-data:/data/db mongo:6
+'''
 
 🚀 Running the Application
 
@@ -49,7 +52,6 @@ cd <your-task1-repo-name>
 
 mvn clean package
 
-
 3️⃣ Run the Spring Boot application
 
 mvn spring-boot:run
@@ -58,15 +60,18 @@ mvn spring-boot:run
 By default, the application will start at:
 👉 http://localhost:8080
 
-🧠 API Endpoints
-Method	Endpoint	Description
-POST	/api/items	Create a new record
-GET	/api/items	Get all records
-GET	/api/items/{id}	Get a record by ID
-PUT	/api/items/{id}	Update an existing record
-DELETE	/api/items/{id}	Delete a record by ID
+| Method   | Endpoint          | Description               |
+| -------- | ----------------- | ------------------------- |
+| `POST`   | `/api/items`      | Create a new record       |
+| `GET`    | `/api/items`      | Get all records           |
+| `GET`    | `/api/items/{id}` | Get a record by ID        |
+| `PUT`    | `/api/items/{id}` | Update an existing record |
+| `DELETE` | `/api/items/{id}` | Delete a record by ID     |
+
+
 🧰 Example Requests (via curl)
 ➕ Create Record
+
 curl -X POST http://localhost:8080/api/items \
 -H "Content-Type: application/json" \
 -d '{"name":"Sensor Module","type":"Vibration","value":12.5}'
@@ -86,6 +91,7 @@ curl -X PUT http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d \
 curl -X DELETE http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
 
 📂 Project Structure
+
 Task1/
 │
 ├── src/
@@ -110,12 +116,13 @@ Task1/
 
 Below are screenshots showing input and output (stored in screenshots/ folder):
 
-Description	Screenshot
-Application Running	
+| Description                      | Screenshot                                  |
+| -------------------------------- | ------------------------------------------- |
+| Application Running              | ![App Running](screenshots/app_running.png) |
+| Postman Request (Create Item)    | ![Create](screenshots/create_item.png)      |
+| Postman Response (Get All Items) | ![GetAll](screenshots/get_all.png)          |
 
-Postman Request (Create Item)	
 
-Postman Response (Get All Items)	
 🧾 Notes
 
 Ensure MongoDB is running before starting the app.
