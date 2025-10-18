@@ -2,9 +2,9 @@
 
 ## 👩‍💻 Author
 **Name:** Suruthi M S  
-**Date:** October 2025  
+**GitHub:** https://github.com/<your-username>  
+**Email:** your-email@example.com  
 
----
 
 ## 📘 Overview
 This project implements a **Java Spring Boot REST API** for managing and executing shell-based tasks.  
@@ -30,36 +30,33 @@ The API stores data in **MongoDB** and allows CRUD operations (Create, Read, Upd
 
 ---
 
-## 🐳 Step 1 — Run MongoDB in Docker
-
-Open PowerShell or VS Code terminal and run:
-
-```bash
-docker run -d --name tasks-mongo -p 27017:27017 \
--e MONGO_INITDB_DATABASE=tasksdb \
--v mongo-data:/data/db mongo:6
-
 ## 🚀 Running the Application
 
-1️⃣ Clone or download the repository
+## 🐳 Step 1 — Run MongoDB in Docker
 
 ```bash
 git clone https://github.com/<your-username>/<your-task1-repo-name>.git
 cd <your-task1-repo-name>
+````
 
-## 2️⃣ Build the project using Maven
+### 2️⃣ Build the project using Maven:
+
 ```bash
 mvn clean package
+```
 
-## 3️⃣ Run the Spring Boot application
+### 3️⃣ Run the Spring Boot application:
+
 ```bash
 mvn spring-boot:run
+```
 
+By default, the application will start at:
+👉 [http://localhost:8080](http://localhost:8080)
 
-## By default, the application will start at:
-## 👉 http://localhost:8080
+---
 
-
+## 🧠 API Endpoints
 
 | Method   | Endpoint          | Description               |
 | -------- | ----------------- | ------------------------- |
@@ -69,35 +66,49 @@ mvn spring-boot:run
 | `PUT`    | `/api/items/{id}` | Update an existing record |
 | `DELETE` | `/api/items/{id}` | Delete a record by ID     |
 
+---
 
 ## 🧰 Example Requests (via curl)
-## ➕ Create Record
+
+### ➕ Create Record
 
 ```bash
 curl -X POST http://localhost:8080/api/items \
 -H "Content-Type: application/json" \
 -d '{"name":"Sensor Module","type":"Vibration","value":12.5}'
+```
 
-## 📋 Get All Records
+### 📋 Get All Records
+
 ```bash
 curl -X GET http://localhost:8080/api/items
+```
 
-##🔍 Get by ID
+### 🔍 Get by ID
+
 ```bash
 curl -X GET http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
+```
 
-##✏️ Update Record
+### ✏️ Update Record
+
 ```bash
 curl -X PUT http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d \
 -H "Content-Type: application/json" \
 -d '{"name":"Sensor Module","type":"Acoustic","value":15.9}'
+```
 
-## ❌ Delete Record
+### ❌ Delete Record
+
 ```bash
 curl -X DELETE http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
+```
+
+---
 
 ## 📂 Project Structure
 
+```
 Task1/
 │
 ├── src/
@@ -115,12 +126,14 @@ Task1/
 ├── pom.xml
 ├── README.md
 └── screenshots/
-    ├── input.png
-    └── output.png
+    ├── app_running.png
+    ├── create_item.png
+    └── get_all.png
+```
+
+---
 
 ## 📸 Screenshots
-
-Below are screenshots showing input and output (stored in screenshots/ folder):
 
 | Description                      | Screenshot                                  |
 | -------------------------------- | ------------------------------------------- |
@@ -128,20 +141,22 @@ Below are screenshots showing input and output (stored in screenshots/ folder):
 | Postman Request (Create Item)    | ![Create](screenshots/create_item.png)      |
 | Postman Response (Get All Items) | ![GetAll](screenshots/get_all.png)          |
 
+---
 
-🧾 Notes
+## 🧾 Notes
 
-Ensure MongoDB is running before starting the app.
+* Ensure MongoDB is running before starting the app.
+* Use the default port 8080 unless changed in `application.properties`.
+* Replace `<your-username>` and `<your-task1-repo-name>` with your actual GitHub repo details.
+* Screenshots should show your system date/time and your name to confirm originality.
 
-Use the default port 8080 unless changed in application.properties.
+```
 
-Replace <your-username> and <your-task1-repo-name> with your actual GitHub repo details.
+✅ Key points:
 
-Screenshots should show your system date/time and your name to confirm originality.
+- All **bash commands are in proper code blocks**.  
+- Normal text, headings, and tables are **outside code blocks**, so GitHub renders them properly.  
+- You can now **add this to your repo**, commit, and it will appear nicely on GitHub.  
 
-🧑‍💻 Author
-
-Suruthi M S
-GitHub: https://github.com/<your-username>
-
-Email: your-email@example.com
+If you want, I can also **update it to match your actual Task API (`/api/tasks` instead of `/api/items`)** so it perfectly matches your backend. Do you want me to do that?
+```
