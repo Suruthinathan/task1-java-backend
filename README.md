@@ -38,27 +38,28 @@ Open PowerShell or VS Code terminal and run:
 docker run -d --name tasks-mongo -p 27017:27017 \
 -e MONGO_INITDB_DATABASE=tasksdb \
 -v mongo-data:/data/db mongo:6
-'''
 
-🚀 Running the Application
+## 🚀 Running the Application
 
 1️⃣ Clone or download the repository
 
+```bash
 git clone https://github.com/<your-username>/<your-task1-repo-name>.git
 cd <your-task1-repo-name>
 
-
-2️⃣ Build the project using Maven
-
+## 2️⃣ Build the project using Maven
+```bash
 mvn clean package
 
-3️⃣ Run the Spring Boot application
-
+## 3️⃣ Run the Spring Boot application
+```bash
 mvn spring-boot:run
 
 
-By default, the application will start at:
-👉 http://localhost:8080
+## By default, the application will start at:
+## 👉 http://localhost:8080
+
+
 
 | Method   | Endpoint          | Description               |
 | -------- | ----------------- | ------------------------- |
@@ -69,28 +70,33 @@ By default, the application will start at:
 | `DELETE` | `/api/items/{id}` | Delete a record by ID     |
 
 
-🧰 Example Requests (via curl)
-➕ Create Record
+## 🧰 Example Requests (via curl)
+## ➕ Create Record
 
+```bash
 curl -X POST http://localhost:8080/api/items \
 -H "Content-Type: application/json" \
 -d '{"name":"Sensor Module","type":"Vibration","value":12.5}'
 
-📋 Get All Records
+## 📋 Get All Records
+```bash
 curl -X GET http://localhost:8080/api/items
 
-🔍 Get by ID
+##🔍 Get by ID
+```bash
 curl -X GET http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
 
-✏️ Update Record
+##✏️ Update Record
+```bash
 curl -X PUT http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d \
 -H "Content-Type: application/json" \
 -d '{"name":"Sensor Module","type":"Acoustic","value":15.9}'
 
-❌ Delete Record
+## ❌ Delete Record
+```bash
 curl -X DELETE http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
 
-📂 Project Structure
+## 📂 Project Structure
 
 Task1/
 │
@@ -112,7 +118,7 @@ Task1/
     ├── input.png
     └── output.png
 
-📸 Screenshots
+## 📸 Screenshots
 
 Below are screenshots showing input and output (stored in screenshots/ folder):
 
