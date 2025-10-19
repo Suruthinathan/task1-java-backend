@@ -150,11 +150,3 @@ Task1/
 
 ---
 
-## 🧾 Notes
-
-* Ensure MongoDB is running before starting the app.
-* Use the default port 8080 unless changed in `application.properties`.
-* Replace `<your-username>` and `<your-task1-repo-name>` with your actual GitHub repo details.
-* Screenshots should show your system date/time and your name to confirm originality.
-
-```
