@@ -5,6 +5,15 @@
 **GitHub:** https://github.com/Suruthinathan  
 **Email:** suruthi1425@gmail.com
 
+## **Table of Contents**
+1. [Author](#author)
+2. [Overview](#overview)
+3. [Requirements](#requirements)
+4. [Running the Application](#running-the-application)
+5. [API Endpoints](#api-endpoints)
+6. [Example Requests](#example-requests)
+7. [Project Structure](#project-structure)
+8. [Screenshots](#screenshots)
 
 ## Overview
 This project implements a **Java Spring Boot REST API** for managing and executing shell-based tasks.  
