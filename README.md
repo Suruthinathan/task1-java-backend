@@ -1,12 +1,12 @@
-# 🧩 Task 1 — Java Backend REST API
+# Task 1 — Java Backend REST API
 
-## 👩‍💻 Author
+## Author
 **Name:** Suruthi M S  
 **GitHub:** https://github.com/Suruthinathan  
 **Email:** suruthi1425@gmail.com
 
 
-## 📘 Overview
+## Overview
 This project implements a **Java Spring Boot REST API** for managing and executing shell-based tasks.  
 Each task contains:
 - `id`
@@ -19,7 +19,7 @@ The API stores data in **MongoDB** and allows CRUD operations (Create, Read, Upd
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 | Tool | Version | Purpose |
 |------|----------|----------|
@@ -30,9 +30,9 @@ The API stores data in **MongoDB** and allows CRUD operations (Create, Read, Upd
 
 ---
 
-## 🚀 Running the Application
+##  Running the Application
 
-## 🐳 Step 1 — Run MongoDB in Docker
+## Step 1 — Run MongoDB in Docker
 
 ```bash
 git clone https://github.com/<your-username>/<your-task1-repo-name>.git
@@ -52,11 +52,11 @@ mvn spring-boot:run
 ```
 
 By default, the application will start at:
-👉 [http://localhost:8080](http://localhost:8080)
+ [http://localhost:8080](http://localhost:8080)
 
 ---
 
-## 🧠 API Endpoints
+##  API Endpoints
 
 | Method   | Description               |
 | -------- | ------------------------- |
@@ -68,9 +68,9 @@ By default, the application will start at:
 
 ---
 
-## 🧰 Example Requests (via curl)
+##  Example Requests (via curl)
 
-### ➕ Create Record
+### Create Record
 
 ```bash
 curl -X POST http://localhost:8080/api/items \
@@ -78,19 +78,19 @@ curl -X POST http://localhost:8080/api/items \
 -d '{"name":"Sensor Module","type":"Vibration","value":12.5}'
 ```
 
-### 📋 Get All Records
+### Get All Records
 
 ```bash
 curl -X GET http://localhost:8080/api/items
 ```
 
-### 🔍 Get by ID
+### Get by ID
 
 ```bash
 curl -X GET http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
 ```
 
-### ✏️ Update Record
+### Update Record
 
 ```bash
 curl -X PUT http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d \
@@ -98,7 +98,7 @@ curl -X PUT http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d \
 -d '{"name":"Sensor Module","type":"Acoustic","value":15.9}'
 ```
 
-### ❌ Delete Record
+### Delete Record
 
 ```bash
 curl -X DELETE http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
@@ -106,8 +106,7 @@ curl -X DELETE http://localhost:8080/api/items/670f92d8c18f4a2b7f3e2a9d
 
 ---
 
-## 📂 Project Structure
-
+##  Project Structure
 ```
 Task1/
 │
@@ -132,7 +131,7 @@ Task1/
 ```
 
 ---
-## 📸 Screenshots
+## Screenshots
 
 | Description                 | Screenshot                                  |
 |-----------------------------|--------------------------------------------|
