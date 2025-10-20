@@ -58,13 +58,13 @@ By default, the application will start at:
 
 ## 🧠 API Endpoints
 
-| Method   | Endpoint          | Description               |
-| -------- | ----------------- | ------------------------- |
-| `POST`   | `/api/items`      | Create a new record       |
-| `GET`    | `/api/items`      | Get all records           |
-| `GET`    | `/api/items/{id}` | Get a record by ID        |
-| `PUT`    | `/api/items/{id}` | Update an existing record |
-| `DELETE` | `/api/items/{id}` | Delete a record by ID     |
+| Method   | Description               |
+| -------- | ------------------------- |
+| `POST`   | Create a new record       |
+| `GET`    | Get all records           |
+| `GET`    | Get a record by ID        |
+| `PUT`    | Update an existing record |
+| `DELETE` | Delete a record by ID     |
 
 ---
 
